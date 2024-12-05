@@ -1,0 +1,15 @@
+[
+  {
+    "id": "1",
+    "title": "Express.js ",
+    "outDecription": "Node.js uchun eng mashhur va keng qo'llaniladigan web framework.",
+    "description": "Express.js — bu Node.js uchun eng mashhur va keng qo'llaniladigan web framework bo'lib, u web va mobil (API qismini) ilovalarni yaratishni soddalashtiradi.",
+    "advantages": [
+      "Yengillik: Soddalashtirilgan va intuitiv interfeys.",
+      "Moslashuvchanlik: HTML sahifalar, API-lar va boshqa ko'pgina funktsiyalarni yaratish imkoniyati.",
+      "Keng qo'llab-quvvatlash: Katta hamjamiyat va ko'plab plaginlar."
+    ],
+    "usage": "- Node.js uchun keng qo'llaniladigan web framework bo'lib, u web va mobil ilovalarni yaratishni soddalashtiradi.",
+    "example": "const express = require('express');\nconst app = express();\nconst port = 3000;\n\napp.get('/', (req, res) => {\n  res.send('Hello, World!');\n});\n\napp.listen(port, () => {\n  console.log(`Server is running at http://localhost:${port}`);\n});"
+  }
+]
