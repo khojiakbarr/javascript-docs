@@ -5,7 +5,7 @@ import SidebarLayout from "../SideBarLayout";
 import mainData from "../../static/mainData";
 import { Info } from "lucide-react";
 import { MainContentStyle } from "./MainLayoutStyle";
-import CodeFormatter from "@/components/CodeFormatter";
+// import CodeFormatter from "@/components/CodeFormatter";
 
 export default function MainLayout() {
   const { id } = useParams();
@@ -39,7 +39,7 @@ export default function MainLayout() {
         </div>
 
         <h3 className="example">Misol</h3>
-        <CodeFormatter code={findedItem.example} />
+        {/* <CodeFormatter code={findedItem.example} /> */}
       </MainContentStyle>
     </SidebarLayout>
   );
