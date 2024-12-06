@@ -336,5 +336,137 @@
     ],
     "usage": "- Chat ilovalari, real-time yangilanishlar va boshqa real-time xizmatlar yaratish uchun ishlatiladi.",
     "example": "const socket = io();\nsocket.emit('message', 'Hello, Server!');\nsocket.on('message', data => {\n  console.log(data);\n});"
+  },
+
+  {
+    "id": "26",
+    "title": "Material-UI",
+    "outDecription": "React uchun Material Design asosidagi UI komponentlar kutubxonasi.",
+    "description": "Material-UI — bu React uchun Material Design asosida qurilgan kengaytirilgan UI komponentlar kutubxonasi bo'lib, u ilovalaringizni tezda va samarali tarzda Material Design dizayni bilan uyg'unlashtirishga yordam beradi.",
+    "advantages": [
+      "Material Design dizayni: Google'ning dizayn tizimi bilan to'liq integratsiya.",
+      "Moslashuvchan: Ko'plab UI komponentlari va mavzularni taqdim etadi.",
+      "Yuqori darajadagi qo'llab-quvvatlash: Katta hamjamiyat va hujjatlar."
+    ],
+    "usage": "- React ilovalari uchun Material Design asosida UI yaratish.",
+    "example": "import { Button } from '@mui/material';\n\nfunction MyComponent() {\n  return <Button variant='contained'>Click Me</Button>;\n}"
+  },
+  {
+    "id": "27",
+    "title": "Ant Design",
+    "outDecription": "React uchun kengaytirilgan UI komponentlar kutubxonasi.",
+    "description": "Ant Design — bu React uchun ishlab chiqilgan, to'liq konfiguratsiyalanadigan, yuqori darajadagi UI komponentlar kutubxonasi. Unda zamonaviy dizayn, kengaytirilgan komponentlar va keng qo'llab-quvvatlash mavjud.",
+    "advantages": [
+      "To'liq UI tizimi: To'liq integratsiyalashgan, kengaytirilgan UI komponentlar.",
+      "Kengaytirilgan: UI tizimini tezda sozlash uchun moslashtiriladigan variantlar.",
+      "Yuqori sifatli dokumentatsiya: To'liq va aniq hujjatlar."
+    ],
+    "usage": "- React ilovalarida to'liq UI tizimini yaratish.",
+    "example": "import { Button } from 'antd';\n\nconst App = () => (\n  <Button type='primary'>Primary Button</Button>\n);"
+  },
+  {
+    "id": "28",
+    "title": "Chakra UI",
+    "outDecription": "React uchun zamonaviy UI kutubxonasi.",
+    "description": "Chakra UI — bu React ilovalarida foydalanish uchun minimalistik va toza dizaynni ta'minlovchi UI kutubxonasi bo'lib, u juda oson va tezda integratsiyalashadi. Chakra UI yordamida oddiy va samarali UI elementlari yaratish mumkin.",
+    "advantages": [
+      "Tez integratsiya: Juda oson integratsiyalashadi.",
+      "Tez va qulay dizayn: Chakra UI yuqori darajadagi modullarni taklif etadi.",
+      "Moslashuvchan: Komponentlarning xususiyatlarini oson sozlash imkonini beradi."
+    ],
+    "usage": "- React ilovalarida minimalist dizayn yaratish.",
+    "example": "import { Button } from '@chakra-ui/react';\n\nconst MyButton = () => (\n  <Button colorScheme='teal'>Click Me</Button>\n);"
+  },
+  {
+    "id": "29",
+    "title": "Tailwind UI",
+    "outDecription": "Tailwind CSS asosida yaratilgan UI komponentlar kutubxonasi.",
+    "description": "Tailwind UI — bu Tailwind CSS asosida yaratilgan, veb dizaynni tezda va samarali tarzda yaratishga yordam beruvchi komponentlar kutubxonasi. Tailwind UI yordamida UI dizaynlarini juda oson va tez qurishingiz mumkin.",
+    "advantages": [
+      "Tailwind CSS bilan to'liq integratsiya: Tailwind CSS bilan to'liq moslashgan komponentlar.",
+      "Minimal va zamonaviy dizaynlar: Oddiy va zamonaviy UI elementlari.",
+      "Kengaytiriladigan: Ko'plab UI dizaynlarini osongina sozlash mumkin."
+    ],
+    "usage": "- Tailwind CSS yordamida UI elementlarini tezda yaratish.",
+    "example": "<div className='bg-blue-500 p-4 rounded-lg'>Hello, Tailwind UI!</div>"
+  },
+  {
+    "id": "30",
+    "title": "Semantic UI",
+    "outDecription": "UI komponentlar kutubxonasi, maqsadga yo'naltirilgan va aniq dizayn bilan.",
+    "description": "Semantic UI — bu veb-standartlar va semantik HTML-ni qo'llab-quvvatlashni ta'minlaydigan UI komponentlar kutubxonasi bo'lib, o'zida aniq va tushunarli dizayn tizimini o'z ichiga oladi.",
+    "advantages": [
+      "Semantik HTML: Yuqori darajada semantik kod yozish imkonini beradi.",
+      "Ko'plab komponentlar: UI uchun kengaytirilgan komponentlar.",
+      "Yuqori moslashuvchanlik: Dizaynni o'zgartirish uchun eng moslashtirilgan komponentlar."
+    ],
+    "usage": "- HTML va CSS bilan yuqori darajadagi UI tizimini yaratish.",
+    "example": "<button class='ui primary button'>Primary Button</button>"
+  },
+
+  {
+    "id": "31",
+    "title": "GSAP (GreenSock Animation Platform)",
+    "outDecription": "JavaScript uchun kuchli va moslashuvchan animatsiya kutubxonasi.",
+    "description": "GSAP — bu JavaScript uchun eng mashhur animatsiya kutubxonalaridan biri bo'lib, u yuqori sifatli, tez va samarali animatsiyalar yaratish imkoniyatini beradi. GSAP jismoniy, vektor va CSS animatsiyalarini yaratishda keng qo'llaniladi.",
+    "advantages": [
+      "Tezlik va samaradorlik: GSAP juda tez va samarali animatsiyalar yaratadi.",
+      "Kengaytirilgan funksionallik: Elementlarning xususiyatlarini animatsiya qilish uchun ko'plab opsiyalar mavjud.",
+      "Katta qo'llab-quvvatlash: Kengaytirilgan dokumentatsiya va hamjamiyat."
+    ],
+    "usage": "- Veb ilovalarda yuqori sifatli animatsiyalar yaratish.",
+    "example": "gsap.to('.element', {duration: 2, x: 100, opacity: 1});"
+  },
+  {
+    "id": "32",
+    "title": "Anime.js",
+    "outDecription": "Loyiha elementlarini animatsiyalash uchun eng yaxshi kutubxonalardan biri.",
+    "description": "Anime.js — bu JavaScript uchun yengil, lekin kuchli animatsiya kutubxonasi. U DOM, SVG, CSS va JavaScript ob'ektlarini animatsiya qilishni qo'llab-quvvatlaydi.",
+    "advantages": [
+      "Kengaytirilgan xususiyatlar: DOM, CSS, SVG va boshqa elementlarga animatsiyalarni qo'llash mumkin.",
+      "Yengil va tezkor: Kichik hajmda va samarali ishlaydi.",
+      "Oson o'rnatish va ishlatish: Oddiy va intuitiv API."
+    ],
+    "usage": "- Kengaytirilgan animatsiyalar va interaktivlik uchun.",
+    "example": "anime({ targets: '.element', translateX: 250, easing: 'easeInOutQuad' });"
+  },
+  {
+    "id": "33",
+    "title": "Three.js",
+    "outDecription": "3D grafika va animatsiyalar yaratish uchun kutubxona.",
+    "description": "Three.js — bu 3D grafika yaratish uchun JavaScript kutubxonasi bo'lib, u veb ilovalarida 3D animatsiyalarni yaratishga yordam beradi. U WebGL asosida ishlaydi va 3D sahnalarni yaratish va animatsiya qilish uchun kuchli vositalar taqdim etadi.",
+    "advantages": [
+      "3D sahnalarni yaratish: WebGL va 3D model yaratishda yordam beradi.",
+      "Yuqori darajadagi animatsiyalar: 3D animatsiyalarni yaratish uchun keng imkoniyatlar.",
+      "Bepul va ochiq kod: Three.js butunlay bepul va ochiq kodli kutubxona."
+    ],
+    "usage": "- 3D ilovalar va animatsiyalarni yaratish.",
+    "example": "const scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);"
+  },
+  {
+    "id": "34",
+    "title": "Lottie",
+    "outDecription": "JSON formatida animatsiyalarni veb va mobil ilovalarda namoyish qilish.",
+    "description": "Lottie — bu JSON formatida yaratlangan animatsiyalarni veb va mobil ilovalarda namoyish qilish imkoniyatini beruvchi JavaScript kutubxonasi. Lottie animatsiyalarni yuqori sifatda va samarali ishlatish imkonini beradi.",
+    "advantages": [
+      "Keng qo'llanilish: Veb, mobil va desktop ilovalari uchun ishlatiladi.",
+      "Yuqori sifatli animatsiyalar: JSON formatida animatsiyalarni yaratish va integratsiyalash.",
+      "Tez va samarali: Animatsiyalarni eng yaxshi samaradorlikda ko'rsatadi."
+    ],
+    "usage": "- Mobil va veb ilovalar uchun JSON animatsiyalarni integratsiya qilish.",
+    "example": "import Lottie from 'react-lottie';\n\n<Lottie options={defaultOptions} height={400} width={400} />"
+  },
+  {
+    "id": "35",
+    "title": "Velocity.js",
+    "outDecription": "DOM elementlariga animatsiyalarni qo'llash uchun kuchli kutubxona.",
+    "description": "Velocity.js — bu DOM elementlariga animatsiyalarni qo'llashda juda tezkor va samarali ishlaydigan JavaScript kutubxonasi. U CSS va JavaScript animatsiyalarini yaratishda juda mos keladi.",
+    "advantages": [
+      "Tezlik: DOM animatsiyalarini tezda yaratadi.",
+      "CSS va JavaScript integratsiyasi: CSS va JavaScript animatsiyalarini qo'llab-quvvatlaydi.",
+      "Yuqori samaradorlik: Animatsiyalarni samarali va tezkor tarzda ishlatadi."
+    ],
+    "usage": "- DOM elementlarini animatsiya qilish.",
+    "example": "Velocity($('.element'), { opacity: 0 }, { duration: 500 });"
   }
 ]

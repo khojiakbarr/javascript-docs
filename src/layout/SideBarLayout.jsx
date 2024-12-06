@@ -58,8 +58,8 @@ export default function SidebarLayout({ children }) {
                 paddingLeft: "10px",
               }}
             >
-              {mainData.map((item) => (
-                <SidebarMenuItem key={item.id}>
+              {mainData.map((item, index) => (
+                <SidebarMenuItem key={index}>
                   <SidebarMenuButton asChild>
                     <Link
                       href={item.id}

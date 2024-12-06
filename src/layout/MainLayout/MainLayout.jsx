@@ -8,11 +8,9 @@ import CodeFormatter from "@/components/CodeFormatter";
 import "./mainLayoutStyle.css";
 import "highlight.js/styles/github.css"; // GitHub uslubi
 import "highlight.js/styles/atom-one-dark.css";
-import { useState } from "react";
 
 export default function MainLayout() {
   const { id } = useParams();
-  // const [code, setCode] = useState("// Bu yerda JavaScript kodingizni yozing");
 
   const findedItem = mainData.find((item) => item.id === id);
 
@@ -43,13 +41,7 @@ export default function MainLayout() {
         </div>
 
         <h3 className="example">Misol</h3>
-        {/* <CodeFormatter
-          code={findedItem.example}
-          language="javascript"
-          onChange={setCode}
-        /> */}
         <CodeFormatter code={findedItem.example} />
-        {/* <pre>{code}</pre> */}
       </div>
     </SidebarLayout>
   );
