@@ -1,18 +1,21 @@
 "use client";
 
 import { useParams } from "next/navigation";
+import { Info } from "lucide-react";
+import Link from "next/link";
 import SidebarLayout from "../SideBarLayout";
 import mainData from "../../static/mainData";
-import { Info } from "lucide-react";
 import CodeFormatter from "@/components/CodeFormatter";
 import "./mainLayoutStyle.css";
-import "highlight.js/styles/github.css"; // GitHub uslubi
-import "highlight.js/styles/atom-one-dark.css";
 
 export default function MainLayout() {
   const { id } = useParams();
+  const currentIndex = mainData.findIndex((item) => item.id === id); // Hozirgi elementning indeksini topish
+  const findedItem = mainData[currentIndex]; // Hozirgi elementni olish
 
-  const findedItem = mainData.find((item) => item.id === id);
+  // Keyingi va oldingi elementlar uchun indekslarni olish
+  const prevItem = mainData[currentIndex - 1]; // Oldingi element
+  const nextItem = mainData[currentIndex + 1]; // Keyingi element
 
   return (
     <SidebarLayout>
@@ -42,6 +45,22 @@ export default function MainLayout() {
 
         <h3 className="example">Misol</h3>
         <CodeFormatter code={findedItem.example} />
+
+        <div className="navigationButtons">
+          {/* Previous button */}
+          {prevItem && (
+            <Link href={`/docs/${prevItem.id}`}>
+              <button className="btn"> Oldingi</button>
+            </Link>
+          )}
+
+          {/* Next button */}
+          {nextItem && (
+            <Link href={`/docs/${nextItem.id}`}>
+              <button className="btn"> Keyingi</button>
+            </Link>
+          )}
+        </div>
       </div>
     </SidebarLayout>
   );

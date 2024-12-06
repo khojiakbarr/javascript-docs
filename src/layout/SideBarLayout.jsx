@@ -37,14 +37,15 @@ export default function SidebarLayout({ children }) {
               paddingRight: "20px",
             }}
           >
-            <h2
+            <Link
+              href={"/"}
               className="text-xl font-semibold border-b border-[var(--brand)] "
               style={{
                 padding: "0 0 10px 10px",
               }}
             >
               atama
-            </h2>
+            </Link>
           </SidebarHeader>
           <SidebarContent
             style={{
@@ -73,7 +74,6 @@ export default function SidebarLayout({ children }) {
                           activeItem === item.id && "hsl(var(--hover-item))",
                       }}
                     >
-                      {/* <item.icon className="mr-2 h-4 w-4" /> */}
                       <span>{item.title}</span>
                     </Link>
                   </SidebarMenuButton>

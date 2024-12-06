@@ -77,3 +77,18 @@
   font-size: 19px;
   line-height: 167%;
 }
+
+.navigationButtons {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.btn {
+  background: hsl(var(--bglight));
+  width: 100%;
+  border: 1px solid var(--brand);
+  border-radius: 8px;
+  padding: 17px;
+}
