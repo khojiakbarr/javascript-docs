@@ -13,7 +13,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Atam ",
+  title: "Atama ",
   description: "atama bu: Barcha savollarga javob",
 };
 
