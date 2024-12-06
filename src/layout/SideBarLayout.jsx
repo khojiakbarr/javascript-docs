@@ -67,11 +67,7 @@ export default function SidebarLayout({ children }) {
                         e.preventDefault(); // Default linkni bloklash
                         handleNavigation(item.id);
                       }}
-                      className={`flex items-center space-x-2  rounded-md 3 ${
-                        activeItem === item.id
-                          ? "bg-blue-500 text-white"
-                          : "hover:bg-[hsl(var(--hover-item))]"
-                      }`}
+                      className={`flex items-center space-x-2 rounded-md  `}
                       style={{
                         background:
                           activeItem === item.id && "hsl(var(--hover-item))",
