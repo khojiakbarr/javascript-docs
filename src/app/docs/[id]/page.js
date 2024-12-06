@@ -6,9 +6,5 @@ import React from "react";
 export default function Docs() {
   const { id } = useParams();
 
-  return (
-    <>
-      <MainLayout id={id} />
-    </>
-  );
+  return <MainLayout id={id} />;
 }
